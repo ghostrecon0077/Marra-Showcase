@@ -1,5 +1,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  // No special configuration needed for this project
+  base: 'Marra-Showcase', // Replace with your actual repository name
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 })
