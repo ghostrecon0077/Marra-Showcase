@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the background grid pattern */
+.bg-grid-slate-800 {
+    background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(to right, white 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    opacity: 0.1;
+}

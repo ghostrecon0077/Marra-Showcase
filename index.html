@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marra 2.0: Allie's Protocol | An Intelligent Engineering Tutor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-dark text-slate-300 antialiased">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-slate-900/70 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-slate-800">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-white">
+                    <span class="text-brand-purple">Allie's</span> Protocol
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#features" class="hover:text-brand-purple transition-colors">Features</a>
+                    <a href="#tech" class="hover:text-brand-purple transition-colors">Technology</a>
+                    <a href="#about" class="hover:text-brand-purple transition-colors">About</a>
+                    <a href="#contact" class="bg-brand-purple text-white font-semibold px-4 py-2 rounded-lg hover:bg-violet-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#features" class="block py-2 px-4 text-sm hover:bg-slate-800">Features</a>
+                <a href="#tech" class="block py-2 px-4 text-sm hover:bg-slate-800">Technology</a>
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-slate-800">About</a>
+                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-slate-800">Contact</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden">
+                <div class="absolute inset-0 bg-grid-slate-800 [mask-image:linear-gradient(to_bottom,white_10%,transparent_100%)]"></div>
+                <div class="container mx-auto px-6 text-center relative">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
+                        <span class="animate-gradient-text bg-gradient-to-r from-brand-blue via-brand-purple to-blue-400 bg-clip-text text-transparent">Marra 2.0:</span>
+                        Allie's Protocol
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
+                        A hyper-intelligent AI teaching assistant, engineered to master your personal course notes and textbooks for a truly personalized learning experience.
+                    </p>
+                    <div class="mt-10">
+                        <a href="#features" class="bg-brand-purple text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-violet-600 transition-transform transform hover:scale-105 duration-300 inline-block">
+                            Explore Capabilities
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="py-20 bg-slate-900/50">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">A Tutor Engineered for Excellence</h2>
+                        <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">Allie's Protocol provides tools that go beyond generic AI answers.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Feature Card 1 -->
+                        <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-brand-purple transition-colors duration-300">
+                            <h3 class="text-xl font-bold text-white">Contextual Q&A</h3>
+                            <p class="mt-4 text-slate-400">Chat directly with your own PDF notes and textbooks. Marra provides answers grounded in your specific course materials, ensuring academic integrity.</p>
+                        </div>
+                        <!-- Feature Card 2 -->
+                        <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-brand-purple transition-colors duration-300">
+                            <h3 class="text-xl font-bold text-white">Step-by-Step Problem Solving</h3>
+                            <p class="mt-4 text-slate-400">Classifies complex engineering problems and provides structured, step-by-step solutions with proper LaTeX formatting for all equations.</p>
+                        </div>
+                        <!-- Feature Card 3 -->
+                        <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-brand-purple transition-colors duration-300">
+                            <h3 class="text-xl font-bold text-white">Conceptual Deep Dives</h3>
+                            <p class="mt-4 text-slate-400">Receive detailed breakdowns of core principles, components, and solved examples, all cited directly from your knowledge base.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tech Stack Section -->
+            <section id="tech" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">The Technology Stack</h2>
+                        <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">Built with a modern, scalable, and production-ready stack.</p>
+                    </div>
+                    <div class="max-w-4xl mx-auto bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                            <div>
+                                <h4 class="font-bold text-white">API</h4>
+                                <p class="text-sm text-slate-400">FastAPI</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">AI Core</h4>
+                                <p class="text-sm text-slate-400">Google Gemini</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Orchestration</h4>
+                                <p class="text-sm text-slate-400">LangChain</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Database</h4>
+                                <p class="text-sm text-slate-400">PostgreSQL</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Vector Search</h4>
+                                <p class="text-sm text-slate-400">PGVector</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">PDF Parsing</h4>
+                                <p class="text-sm text-slate-400">LlamaParse</p>
+                            </div>
+                             <div>
+                                <h4 class="font-bold text-white">Embeddings</h4>
+                                <p class="text-sm text-slate-400">Sentence Transformers</p>
+                            </div>
+                             <div>
+                                <h4 class="font-bold text-white">Web Framework</h4>
+                                <p class="text-sm text-slate-400">Vite + Tailwind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About the Creator Section -->
+            <section id="about" class="py-20 bg-slate-900/50">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">About the Creator</h2>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                        <div class="md:w-1/3 text-center md:text-left">
+                            <h3 class="text-3xl font-bold text-white">Syed Awais Shah</h3>
+                            <p class="mt-2 text-brand-purple font-semibold">Electrical Engineering Student, UET Peshawar</p>
+                            <p class="mt-4 text-slate-400">
+                                Allie's Protocol was developed as a practical application of AI in higher education, aiming to create a tool that enhances personal study and provides a reliable, context-aware learning assistant for complex engineering topics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="py-20">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Get In Touch</h2>
+                    <p class="mt-4 text-lg text-slate-400">Interested in collaborating or learning more?</p>
+                    <div class="mt-8 flex justify-center items-center space-x-8 text-slate-400">
+                         <a href="mailto:shahawais35@gmail.com" class="hover:text-brand-purple transition-colors">shahawais35@gmail.com</a>
+                         <span>&bull;</span>
+                         <p>+92 317 311378</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 border-t border-slate-800 py-6">
+            <div class="container mx-auto px-6 text-center text-slate-500">
+                <p>&copy; 2025 Syed Awais Shah. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
